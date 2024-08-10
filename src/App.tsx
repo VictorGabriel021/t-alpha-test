@@ -2,11 +2,18 @@ import Router from "routes";
 
 import Navbar from "./shared/components/Navbar";
 
+import { ToastContainer } from "react-toastify";
+
+import { Content } from "shared/styles/styles";
+
 function App() {
   return (
     <>
       <Navbar />
-      <Router />
+      <Content>
+        <Router />
+      </Content>
+      <ToastContainer />
     </>
   );
 }
